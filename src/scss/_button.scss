@@ -1,0 +1,14 @@
+.btn {
+  background-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+  color: $White;
+  border: none;
+  border-radius: 50px;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}

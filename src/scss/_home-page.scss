@@ -1,0 +1,38 @@
+.landing-page {
+  background-color: $Very-Light-Gray;
+  height: 70vh;
+  display: flex;
+
+  &_content {
+    width: 144rem;
+    margin: 0 auto;
+    align-self: center;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 400;
+      width: 50rem;
+      line-height: 8rem;
+    }
+
+    h3 {
+      margin: 5rem 0;
+      font-size: 1.8rem;
+      color: $Grayish-Blue;
+      width: 47rem;
+    }
+  }
+
+  &_phones {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    right: -14rem;
+    top: -12rem;
+  }
+  &_bg {
+    position: absolute;
+    right: -50rem;
+    top: -26rem;
+  }
+}
