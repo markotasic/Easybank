@@ -1,38 +1,146 @@
-.landing-page {
+#landing-page {
   background-color: $Very-Light-Gray;
-  height: 70vh;
+
   display: flex;
+}
 
-  &_content {
-    width: 144rem;
-    margin: 0 auto;
-    align-self: center;
+.landing-page_content {
+  width: 144rem;
+  margin: 0 auto;
+  align-self: center;
 
-    h1 {
-      font-size: 6rem;
-      font-weight: 400;
-      width: 50rem;
-      line-height: 8rem;
-    }
-
-    h3 {
-      margin: 5rem 0;
-      font-size: 1.8rem;
-      color: $Grayish-Blue;
-      width: 47rem;
-    }
+  h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    width: 50rem;
+    line-height: 8rem;
   }
 
-  &_phones {
+  h4 {
+    margin: 5rem 0;
+    font-size: 1.8rem;
+    color: $Grayish-Blue;
+    width: 47rem;
+    font-weight: 300;
+  }
+  &-phones {
     position: absolute;
     right: 0;
     z-index: 1;
     right: -14rem;
     top: -12rem;
   }
-  &_bg {
+  &-background {
     position: absolute;
     right: -50rem;
     top: -26rem;
+  }
+}
+
+#about-page {
+  background-color: $Light-Grayish-Blue;
+  z-index: 0;
+}
+
+.about-page_content {
+  width: 144rem;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    color: $Grayish-Blue;
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 65rem;
+    margin-top: 2rem;
+  }
+
+  ul {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-top: 3rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      color: $Grayish-Blue;
+      width: 31rem;
+    }
+  }
+}
+
+#articles-page {
+  background-color: $Very-Light-Gray;
+}
+
+.articles-page_content {
+  width: 144rem;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    li {
+      position: relative;
+      overflow: hidden;
+      background-color: $White;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+      }
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+    }
+  }
+
+  &--text {
+    padding: 3rem;
+
+    h6 {
+      font-size: 1.2rem;
+      color: $Grayish-Blue;
+      font-weight: 300;
+    }
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+      transition: color 0.2s ease-in;
+      &:hover {
+        cursor: pointer;
+        color: $Lime-Green;
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      color: $Grayish-Blue;
+      line-height: 2.2rem;
+    }
   }
 }
